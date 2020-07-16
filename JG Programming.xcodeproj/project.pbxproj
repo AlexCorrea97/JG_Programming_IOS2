@@ -20,6 +20,7 @@
 		3DB5E1DF24BFF0A60054B8E7 /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1DE24BFF0A60054B8E7 /* AdminPageViewController.swift */; };
 		3DB5E1E124BFF17C0054B8E7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */; };
 		3DB5E1E324BFF27C0054B8E7 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */; };
+		3DCD549924C1085000656828 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD549824C1084F00656828 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3DB5E1DE24BFF0A60054B8E7 /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 		3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
+		3DCD549824C1084F00656828 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3DB5E1C324BFC2570054B8E7 /* JG Programming */ = {
 			isa = PBXGroup;
 			children = (
+				3DCD549724C107F500656828 /* Util */,
 				3DB5E1DB24BFED6F0054B8E7 /* ViewControllers */,
 				3DB5E1C424BFC2570054B8E7 /* AppDelegate.swift */,
 				3DB5E1C624BFC2570054B8E7 /* SceneDelegate.swift */,
@@ -94,6 +97,14 @@
 				3D01D4F424C0E48E00C8E385 /* CrossFitViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3DCD549724C107F500656828 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3DCD549824C1084F00656828 /* GradientView.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			files = (
 				3DB5E1DF24BFF0A60054B8E7 /* AdminPageViewController.swift in Sources */,
 				3D01D4F324C0E47200C8E385 /* GymViewController.swift in Sources */,
+				3DCD549924C1085000656828 /* GradientView.swift in Sources */,
 				3DB5E1DD24BFEFE00054B8E7 /* TrainingViewController.swift in Sources */,
 				3DB5E1C924BFC2570054B8E7 /* ViewController.swift in Sources */,
 				3DB5E1C524BFC2570054B8E7 /* AppDelegate.swift in Sources */,

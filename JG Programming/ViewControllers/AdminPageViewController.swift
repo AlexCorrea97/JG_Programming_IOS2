@@ -8,39 +8,53 @@
 
 import UIKit
 
-class AdminPageViewController: UIPageViewController {
+class AdminPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        let index = adminControllersList.firstIndex(of: viewController)
+        if(index == 0){
+            return adminControllersList.last!
+        }else{
+            return adminControllersList.first!
+        }
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+       let index = adminControllersList.firstIndex(of: viewController)
+       if(index == 0){
+           return adminControllersList.last!
+       }else{
+           return adminControllersList.first!
+       }
+    }
+    
     
     private let GYM_CODE = "gymVC"
     private let CROSSFIT_CODE = "crossFitVC"
     
-    private let gymVC = UIStoryBoard(name:"Main", bundle: nil).instantiateViewController(identifier: GYM_CODE)
-    private let crossFitVC = UIStoryBoard(name:"Main", bundle: nil).instantiateViewController(identifier: CROSSFIT_CODE)
     
     private var adminControllersList: [UIViewController] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let gymVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(identifier: GYM_CODE)
+        let crossFitVC = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(identifier: CROSSFIT_CODE)
+        
         adminControllersList.append(gymVC)
         adminControllersList.append(crossFitVC)
-        setViewController([gymVC], direction: .forward, animated: true, completion: nil)
+        setViewControllers([gymVC], direction: .forward, animated: true, completion: nil)
         dataSource = self
+        
     }
+  
     
-    extension PageViewController: UIPageViewControllerDataSource{
-        func PageViewController(_ PageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?{
-            getPageController()
-        }
-        func PageViewController(_ PageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?{
-            getPageController()
-        }
-    }
-    
-    private func getPageController(){
+    private func getPageController(viewController: UIViewController)-> UIViewController{
         let index = adminControllersList.firstIndex(of: viewController)
         if(index == 0){
-            return adminControllersList.last
+            return adminControllersList.last!
         }else{
-            return adminControllersList.first
+            return adminControllersList.first!
         }
     }
+    //Saved
 }
