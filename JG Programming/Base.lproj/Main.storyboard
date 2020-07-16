@@ -106,6 +106,9 @@
                                         <color key="backgroundColor" white="1" alpha="0.65132705479452058" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="userNameTextAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="AeQ-nQ-6yB"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYF-BF-hk7">
                                         <rect key="frame" x="8" y="297" width="326" height="18"/>
@@ -118,6 +121,9 @@
                                         <color key="backgroundColor" white="1" alpha="0.65132705479452058" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passwordTextAction:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="887-tF-jca"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-Yb-ETC">
                                         <rect key="frame" x="0.0" y="352" width="334" height="30"/>

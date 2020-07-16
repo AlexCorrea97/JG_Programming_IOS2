@@ -40,6 +40,14 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: segueLoginCode, sender: self)
     }
     
+    @IBAction func userNameTextAction(_ sender: UITextField) {
+        self.resignFirstResponder()
+    }
+    @IBAction func passwordTextAction(_ sender: UITextField) {
+        self.resignFirstResponder()
+    }
+    
+    
     private func preLogin(){
         loginView.isHidden = true
     }
