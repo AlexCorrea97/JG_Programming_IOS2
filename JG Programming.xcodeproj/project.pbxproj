@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D01D4F324C0E47200C8E385 /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01D4F224C0E47200C8E385 /* GymViewController.swift */; };
+		3D01D4F524C0E48E00C8E385 /* CrossFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01D4F424C0E48E00C8E385 /* CrossFitViewController.swift */; };
 		3DB5E1C524BFC2570054B8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1C424BFC2570054B8E7 /* AppDelegate.swift */; };
 		3DB5E1C724BFC2570054B8E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1C624BFC2570054B8E7 /* SceneDelegate.swift */; };
 		3DB5E1C924BFC2570054B8E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1C824BFC2570054B8E7 /* ViewController.swift */; };
@@ -15,12 +17,14 @@
 		3DB5E1D124BFC26C0054B8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB5E1D024BFC26C0054B8E7 /* Assets.xcassets */; };
 		3DB5E1D424BFC26C0054B8E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB5E1D224BFC26C0054B8E7 /* LaunchScreen.storyboard */; };
 		3DB5E1DD24BFEFE00054B8E7 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1DC24BFEFE00054B8E7 /* TrainingViewController.swift */; };
-		3DB5E1DF24BFF0A60054B8E7 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1DE24BFF0A60054B8E7 /* AdminViewController.swift */; };
+		3DB5E1DF24BFF0A60054B8E7 /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1DE24BFF0A60054B8E7 /* AdminPageViewController.swift */; };
 		3DB5E1E124BFF17C0054B8E7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */; };
 		3DB5E1E324BFF27C0054B8E7 /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D01D4F224C0E47200C8E385 /* GymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		3D01D4F424C0E48E00C8E385 /* CrossFitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossFitViewController.swift; sourceTree = "<group>"; };
 		3DB5E1C124BFC2570054B8E7 /* JG Programming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JG Programming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB5E1C424BFC2570054B8E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DB5E1C624BFC2570054B8E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		3DB5E1D324BFC26C0054B8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DB5E1D524BFC26C0054B8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB5E1DC24BFEFE00054B8E7 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
-		3DB5E1DE24BFF0A60054B8E7 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		3DB5E1DE24BFF0A60054B8E7 /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
 		3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,9 +87,11 @@
 			children = (
 				3DB5E1C824BFC2570054B8E7 /* ViewController.swift */,
 				3DB5E1DC24BFEFE00054B8E7 /* TrainingViewController.swift */,
-				3DB5E1DE24BFF0A60054B8E7 /* AdminViewController.swift */,
 				3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */,
 				3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */,
+				3DB5E1DE24BFF0A60054B8E7 /* AdminPageViewController.swift */,
+				3D01D4F224C0E47200C8E385 /* GymViewController.swift */,
+				3D01D4F424C0E48E00C8E385 /* CrossFitViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -161,7 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DB5E1DF24BFF0A60054B8E7 /* AdminViewController.swift in Sources */,
+				3DB5E1DF24BFF0A60054B8E7 /* AdminPageViewController.swift in Sources */,
+				3D01D4F324C0E47200C8E385 /* GymViewController.swift in Sources */,
 				3DB5E1DD24BFEFE00054B8E7 /* TrainingViewController.swift in Sources */,
 				3DB5E1C924BFC2570054B8E7 /* ViewController.swift in Sources */,
 				3DB5E1C524BFC2570054B8E7 /* AppDelegate.swift in Sources */,
@@ -169,6 +176,7 @@
 				3DB5E1E124BFF17C0054B8E7 /* ProfileViewController.swift in Sources */,
 				3DB5E1CF24BFC2570054B8E7 /* JG_Programming.xcdatamodeld in Sources */,
 				3DB5E1C724BFC2570054B8E7 /* SceneDelegate.swift in Sources */,
+				3D01D4F524C0E48E00C8E385 /* CrossFitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

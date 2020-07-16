@@ -10,9 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let ADMIN_CODE:String = "AdminVC"
-    let TRAINING_CODE:String = "TrainingVC"
-    var segueLoginCode:String = ""
+    private let ADMIN_CODE:String = "AdminVC"
+    private let TRAINING_CODE:String = "TrainingVC"
+    private var segueLoginCode:String = ""
     
     @IBOutlet weak var preLoginView: UIView!
     @IBOutlet weak var loginView: UIView!
