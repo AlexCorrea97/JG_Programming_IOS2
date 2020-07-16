@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let ADMIN_CODE:String = "AdminVC"
-    let TRAINING_CODE:String = "TRainingVC"
+    let TRAINING_CODE:String = "TrainingVC"
     var segueLoginCode:String = ""
     
     @IBOutlet weak var preLoginView: UIView!
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         preLogin()
+        //save
     }
 
     @IBAction func preLoginButton(_ sender: UIButton) {
