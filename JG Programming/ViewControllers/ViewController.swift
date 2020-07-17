@@ -18,11 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var preLoginItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         preLogin()
-        //save
+        //
     }
 
     @IBAction func preLoginButton(_ sender: UIButton) {
@@ -39,6 +40,11 @@ class ViewController: UIViewController {
         }
         performSegue(withIdentifier: segueLoginCode, sender: self)
     }
+    @IBAction func preLoginBarButton(_ sender: UIBarButtonItem) {
+        preLogin()
+    }
+    
+    
     
     @IBAction func userNameTextAction(_ sender: UITextField) {
         self.resignFirstResponder()
@@ -50,10 +56,15 @@ class ViewController: UIViewController {
     
     private func preLogin(){
         loginView.isHidden = true
+        preLoginItem.title = ""
+        preLoginItem.isEnabled = false
+        preLoginView.isHidden = false
     }
     private func login(){
         preLoginView.isHidden = true
         loginView.isHidden = false
+        preLoginItem.title = "Main"
+        preLoginItem.isEnabled = true
     }
 }
 
