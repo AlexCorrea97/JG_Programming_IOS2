@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Extra: UIView {
+class Extra: UIViewController {
 
     static func getUIColor(hex: String, alpha: Double = 1.0) -> UIColor? {
         var cleanString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
