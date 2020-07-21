@@ -10,6 +10,8 @@
 		3D01D4F324C0E47200C8E385 /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01D4F224C0E47200C8E385 /* GymViewController.swift */; };
 		3D01D4F524C0E48E00C8E385 /* CrossFitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01D4F424C0E48E00C8E385 /* CrossFitViewController.swift */; };
 		3D22A2A724C2AA8300DD9BBF /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22A2A624C2AA8300DD9BBF /* YoutubeViewController.swift */; };
+		3D249B0724C68FC10028632D /* DayProgrammingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D249B0524C68FC10028632D /* DayProgrammingCollectionViewCell.swift */; };
+		3D249B0824C68FC10028632D /* DayProgrammingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D249B0624C68FC10028632D /* DayProgrammingCollectionViewCell.xib */; };
 		3DB5E1C524BFC2570054B8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1C424BFC2570054B8E7 /* AppDelegate.swift */; };
 		3DB5E1C724BFC2570054B8E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1C624BFC2570054B8E7 /* SceneDelegate.swift */; };
 		3DB5E1C924BFC2570054B8E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5E1C824BFC2570054B8E7 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		3D01D4F224C0E47200C8E385 /* GymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
 		3D01D4F424C0E48E00C8E385 /* CrossFitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossFitViewController.swift; sourceTree = "<group>"; };
 		3D22A2A624C2AA8300DD9BBF /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		3D249B0524C68FC10028632D /* DayProgrammingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayProgrammingCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D249B0624C68FC10028632D /* DayProgrammingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayProgrammingCollectionViewCell.xib; sourceTree = "<group>"; };
 		3DB5E1C124BFC2570054B8E7 /* JG Programming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JG Programming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB5E1C424BFC2570054B8E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DB5E1C624BFC2570054B8E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,16 @@
 			path = Training;
 			sourceTree = "<group>";
 		};
+		3D249B0424C68F440028632D /* Programming */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */,
+				3D249B0524C68FC10028632D /* DayProgrammingCollectionViewCell.swift */,
+				3D249B0624C68FC10028632D /* DayProgrammingCollectionViewCell.xib */,
+			);
+			path = Programming;
+			sourceTree = "<group>";
+		};
 		3DB5E1B824BFC2560054B8E7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,11 +114,11 @@
 		3DB5E1DB24BFED6F0054B8E7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D249B0424C68F440028632D /* Programming */,
 				3D22A2A524C2A9E700DD9BBF /* Training */,
 				3DF8D42F24C168D50053D29C /* Admin */,
 				3DB5E1C824BFC2570054B8E7 /* ViewController.swift */,
 				3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */,
-				3DB5E1E224BFF27C0054B8E7 /* ProgrammingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB5E1D424BFC26C0054B8E7 /* LaunchScreen.storyboard in Resources */,
+				3D249B0824C68FC10028632D /* DayProgrammingCollectionViewCell.xib in Resources */,
 				3DB5E1D124BFC26C0054B8E7 /* Assets.xcassets in Resources */,
 				3DB5E1CC24BFC2570054B8E7 /* Main.storyboard in Resources */,
 			);
@@ -217,6 +232,7 @@
 				3DB5E1C924BFC2570054B8E7 /* ViewController.swift in Sources */,
 				3DB5E1C524BFC2570054B8E7 /* AppDelegate.swift in Sources */,
 				3DB5E1E324BFF27C0054B8E7 /* ProgrammingViewController.swift in Sources */,
+				3D249B0724C68FC10028632D /* DayProgrammingCollectionViewCell.swift in Sources */,
 				3DB5E1E124BFF17C0054B8E7 /* ProfileViewController.swift in Sources */,
 				3DB5E1CF24BFC2570054B8E7 /* JG_Programming.xcdatamodeld in Sources */,
 				3DB5E1C724BFC2570054B8E7 /* SceneDelegate.swift in Sources */,
@@ -367,7 +383,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T628CFUBY9;
 				INFOPLIST_FILE = "JG Programming/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T628CFUBY9;
 				INFOPLIST_FILE = "JG Programming/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

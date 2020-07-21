@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lPv-Oo-ovs">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -882,11 +881,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hp-zT-C1R">
-                                <rect key="frame" x="10" y="286" width="394" height="270"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="10" y="296" width="394" height="250"/>
+                                <color key="backgroundColor" red="1" green="0.92941176469999998" blue="0.13725490200000001" alpha="0.59963613010000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="FH4-Kb-oI1"/>
+                                    <constraint firstAttribute="height" constant="250" id="FH4-Kb-oI1"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -949,17 +953,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sv4-mX-gz1">
                                         <rect key="frame" x="20" y="65" width="374" height="679"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-b4-fhg">
-                                                <rect key="frame" x="5" y="5" width="364" height="669"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cdc-e2-RgA">
+                                                <rect key="frame" x="4" y="4" width="366" height="671"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </containerView>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FW5-Pg-Bod">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.92941176469999998" blue="0.13725490200000001" alpha="0.59963613010000005" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="8NB-b4-fhg" secondAttribute="trailing" constant="5" id="9KK-E6-guA"/>
-                                            <constraint firstAttribute="bottom" secondItem="8NB-b4-fhg" secondAttribute="bottom" constant="5" id="RBn-l1-qbe"/>
-                                            <constraint firstItem="8NB-b4-fhg" firstAttribute="top" secondItem="sv4-mX-gz1" secondAttribute="top" constant="5" id="njL-f1-lsb"/>
-                                            <constraint firstItem="8NB-b4-fhg" firstAttribute="leading" secondItem="sv4-mX-gz1" secondAttribute="leading" constant="5" id="nwP-CM-dgU"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cdc-e2-RgA" secondAttribute="trailing" constant="4" id="GEU-Ob-sTu"/>
+                                            <constraint firstItem="Cdc-e2-RgA" firstAttribute="top" secondItem="sv4-mX-gz1" secondAttribute="top" constant="4" id="Ovg-Yc-A8u"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cdc-e2-RgA" secondAttribute="bottom" constant="4" id="fUn-X2-iuF"/>
+                                            <constraint firstItem="Cdc-e2-RgA" firstAttribute="leading" secondItem="sv4-mX-gz1" secondAttribute="leading" constant="4" id="sdL-aW-wp3"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -990,6 +1006,9 @@
                         <viewLayoutGuide key="safeArea" id="kgF-UP-dHd"/>
                     </view>
                     <navigationItem key="navigationItem" id="z6R-fU-mGO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Cdc-e2-RgA" id="lBf-Ae-Z0Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVH-IR-jQR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
