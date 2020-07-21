@@ -14,7 +14,6 @@ class DayProgrammingCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
 
 }
