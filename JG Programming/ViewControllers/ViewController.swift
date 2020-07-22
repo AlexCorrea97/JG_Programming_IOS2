@@ -23,16 +23,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         preLogin()
-        //saved
-        //saved
-        //saved
+        
     }
 
     @IBAction func preLoginButton(_ sender: UIButton) {
         login()
     }
     @IBAction func getAccountButton(_ sender: UIButton) {
-        
+        sendMessageWA()
     }
     @IBAction func loginButton(_ sender: UIButton) {
         if(userNameTextField.text == "jg"){
@@ -55,6 +53,25 @@ class ViewController: UIViewController {
         self.resignFirstResponder()
     }
     
+    private func sendMessageWA(){
+        let messageError:String = "You can't send a message.\nCheck if you have installed WhatsApp"
+        let message:String = "Buen día. Quiero solicitar una membresía de JG-Programming"
+        let phone:String = "+5219992920229"//+5219991647158
+        let urlWhats = "whatsapp://send?phone=\(phone)&text=\(message)"
+        var characterSet = CharacterSet.urlQueryAllowed
+        characterSet.insert(charactersIn: "?&")
+        if let url = urlWhats.addingPercentEncoding(withAllowedCharacters: characterSet){
+            if let url = NSURL(string: url){
+                if UIApplication.shared.canOpenURL(url as URL){
+                    UIApplication.shared.open(url as URL)
+                }else{
+                    let errorAlert = UIAlertController(title: "Sorry", message: messageError, preferredStyle: .alert)
+                    errorAlert.addAction(UIAlertAction(title: "😕", style: .default, handler: nil))
+                    self.present(errorAlert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
     
     private func preLogin(){
         loginView.isHidden = true

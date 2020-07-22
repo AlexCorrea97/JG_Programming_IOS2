@@ -33,8 +33,11 @@ class Extra: UIViewController {
     }
     
     
+    
     // MARK - constantes static útiles
     static let UIColorYellow:String = "#FFED23"
     static let UIColorWhiteTransparent60:String = "#80CCCCCC"
 
 }
+
+

@@ -701,15 +701,28 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENG-UC-BIB">
+                                                                <rect key="frame" x="44" y="143.66666666666666" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="RDB-Gp-CRj"/>
+                                                                    <constraint firstAttribute="width" constant="50" id="RQH-KY-Opy"/>
+                                                                </constraints>
+                                                                <state key="normal" image="info.circle" catalog="system"/>
+                                                                <connections>
+                                                                    <action selector="infoButton:" destination="e37-V4-JNw" eventType="touchUpInside" id="HhH-oT-i3E"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstItem="ENG-UC-BIB" firstAttribute="centerX" secondItem="8Nn-69-2be" secondAttribute="centerX" id="6Ey-n5-3Gw"/>
                                                             <constraint firstItem="h1X-1B-8Vc" firstAttribute="leading" secondItem="8Nn-69-2be" secondAttribute="leading" id="DXp-YR-AuE"/>
                                                             <constraint firstItem="h1X-1B-8Vc" firstAttribute="top" secondItem="8Nn-69-2be" secondAttribute="top" id="I6k-c6-FYz"/>
                                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="35s-Tu-VnW" secondAttribute="trailing" id="gEW-Zs-10h"/>
                                                             <constraint firstItem="35s-Tu-VnW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Nn-69-2be" secondAttribute="leading" id="jDS-Hm-XqZ"/>
                                                             <constraint firstItem="35s-Tu-VnW" firstAttribute="centerY" secondItem="8Nn-69-2be" secondAttribute="centerY" id="pCh-11-H8X"/>
                                                             <constraint firstItem="35s-Tu-VnW" firstAttribute="centerX" secondItem="8Nn-69-2be" secondAttribute="centerX" id="sMD-nt-Iqc"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ENG-UC-BIB" secondAttribute="bottom" id="wHA-99-UJY"/>
                                                             <constraint firstAttribute="trailing" secondItem="h1X-1B-8Vc" secondAttribute="trailing" id="wj9-z1-n2p"/>
                                                         </constraints>
                                                     </view>
@@ -870,7 +883,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhu-dU-ER8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="-420"/>
+            <point key="canvasLocation" x="747.82608695652175" y="-420.53571428571428"/>
         </scene>
         <!--Youtube View Controller-->
         <scene sceneID="ihB-ED-uzN">
@@ -892,6 +905,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9w-Q3-kyQ">
+                                <rect key="frame" x="139.66666666666666" y="256" width="134.99999999999997" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="2ay-8B-NkC"/>
+                                    <constraint firstAttribute="height" constant="35" id="eUx-IG-qom"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="IR A YOUTUBE"/>
+                                <connections>
+                                    <action selector="goToYTButton:" destination="iSn-sa-P54" eventType="touchUpInside" id="E4V-lb-hXD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -899,9 +924,14 @@
                             <constraint firstItem="4hp-zT-C1R" firstAttribute="leading" secondItem="0Rh-nS-Mog" secondAttribute="leading" constant="10" id="XtB-g7-gdm"/>
                             <constraint firstItem="4hp-zT-C1R" firstAttribute="centerX" secondItem="Bxd-fr-6kL" secondAttribute="centerX" id="hFV-gN-Qc3"/>
                             <constraint firstItem="0Rh-nS-Mog" firstAttribute="trailing" secondItem="4hp-zT-C1R" secondAttribute="trailing" constant="10" id="mDP-bz-8hJ"/>
+                            <constraint firstItem="l9w-Q3-kyQ" firstAttribute="centerX" secondItem="Bxd-fr-6kL" secondAttribute="centerX" id="onI-Jc-0AL"/>
+                            <constraint firstItem="4hp-zT-C1R" firstAttribute="top" secondItem="l9w-Q3-kyQ" secondAttribute="bottom" constant="5" id="p3P-ed-NwQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Rh-nS-Mog"/>
                     </view>
+                    <connections>
+                        <outlet property="dialogView" destination="4hp-zT-C1R" id="15V-qX-m20"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afJ-lU-hm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -933,9 +963,12 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="mcn-7m-Szy"/>
                                                 </constraints>
-                                                <state key="normal" title="X">
+                                                <state key="normal" title="X" image="commets">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="commentsButton:" destination="4gv-x5-CpK" eventType="touchUpInside" id="w3r-H2-7ji"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1124,6 +1157,8 @@
         <image name="card_view_1" width="1119" height="387"/>
         <image name="card_view_2" width="1119" height="394"/>
         <image name="card_view_4" width="1116" height="405"/>
+        <image name="commets" width="115" height="109"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="jgLOGO" width="480" height="329"/>
         <image name="loginBackground" width="1080" height="2280"/>
         <image name="logo_unicolor" width="329" height="342"/>

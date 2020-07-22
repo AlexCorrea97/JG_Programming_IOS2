@@ -23,6 +23,11 @@ class ProgrammingViewController: UIViewController{
         collectionView.delegate = self
         collectionView.register(UINib(nibName: DAY_COLLECTION_VIEW, bundle:nil), forCellWithReuseIdentifier:DAY_VIEW)
     }
+    
+    @IBAction func commentsButton(_ sender: UIButton) {
+        
+    }
+    
 }
 
 extension ProgrammingViewController: UICollectionViewDataSource{

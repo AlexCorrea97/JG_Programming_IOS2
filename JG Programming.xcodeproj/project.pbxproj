@@ -114,10 +114,10 @@
 		3DB5E1DB24BFED6F0054B8E7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3DB5E1C824BFC2570054B8E7 /* ViewController.swift */,
 				3D249B0424C68F440028632D /* Programming */,
 				3D22A2A524C2A9E700DD9BBF /* Training */,
 				3DF8D42F24C168D50053D29C /* Admin */,
-				3DB5E1C824BFC2570054B8E7 /* ViewController.swift */,
 				3DB5E1E024BFF17C0054B8E7 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
